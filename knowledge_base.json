@@ -1,0 +1,42 @@
+[
+  {
+    "id": "KB01",
+    "title": "Duplicate charges and billing errors",
+    "text": "If a user reports being charged twice for the same billing period, first check the payments dashboard for duplicate transaction IDs within 24 hours of each other. Confirmed duplicates should be refunded within 3-5 business days without requiring the user to cancel their subscription. Do not ask the user to 'wait for it to resolve itself' — duplicate charges are a billing system issue, not a delay issue."
+  },
+  {
+    "id": "KB02",
+    "title": "Refund policy for subscriptions",
+    "text": "Nebula offers a 14-day money-back guarantee on first-time subscriptions only. Refund requests after 14 days are evaluated case-by-case, prioritizing cases involving platform errors, unauthorized charges, or expert misconduct. Refunds for expert misconduct do not require the standard 14-day window and should be escalated to the Trust & Safety queue regardless of subscription age."
+  },
+  {
+    "id": "KB03",
+    "title": "Password reset and account recovery",
+    "text": "Password reset emails are sent from noreply@nebula-support.com and can take up to 10 minutes to arrive. If a user reports never receiving reset emails, check the spam folder guidance first, then verify the email on file is correct (typos in the original signup email are a common cause). If the account has 2FA enabled and the user lost access to their authenticator, this requires identity verification by the Trust & Safety team — do not manually disable 2FA from a standard support ticket."
+  },
+  {
+    "id": "KB04",
+    "title": "Reporting expert misconduct",
+    "text": "Any complaint involving an expert being unprofessional, giving harmful or unlicensed advice, or violating platform conduct guidelines must be logged in the Expert Conduct tracker, not just resolved as a routine complaint. This applies even if the user does not explicitly ask for the expert to be investigated — conduct issues are tracked platform-wide to catch repeat patterns across multiple users."
+  },
+  {
+    "id": "KB05",
+    "title": "Switching between monthly and annual billing",
+    "text": "Users can switch from monthly to annual billing at any time from Account Settings > Subscription > Change Plan. The switch takes effect at the start of the next billing cycle by default; switching mid-cycle with immediate proration is possible on request but requires manual processing since it is not yet self-serve."
+  },
+  {
+    "id": "KB06",
+    "title": "Payment method failures on renewal",
+    "text": "When a renewal payment fails, the user's card issuer typically returns one of: insufficient funds, expired card, or a generic decline. Nebula retries failed payments automatically after 24 hours and 72 hours before suspending access. If a user reports repeated failures despite a valid card, check whether their bank is blocking the transaction as suspicious (common with international cards) and suggest they contact their bank to authorize the merchant."
+  },
+  {
+    "id": "KB07",
+    "title": "App crashes and technical bugs",
+    "text": "For crash reports, always ask for: device/OS version, app version, and whether the crash is reproducible. Known issue: photo uploads on iOS 18 with HEIC format can cause crashes in app versions before 4.2.1 — the fix is to update the app or convert the photo to JPEG before uploading. For crashes without a known cause, escalate to the engineering bug queue with full repro steps rather than guessing at a fix."
+  },
+  {
+    "id": "KB08",
+    "title": "Unauthorized access and account security incidents",
+    "text": "If a user reports unrecognized sessions, unexpected changes to their payment method, or bookings they didn't make, treat this as a potential account compromise. Immediately suggest a password reset and review of active sessions, and escalate to the Security team for a full audit — this should never be resolved as a routine billing or account-access ticket, since the root cause (how the account was accessed) needs investigation."
+  }
+]

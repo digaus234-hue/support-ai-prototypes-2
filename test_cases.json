@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A01",
+    "text": "I was charged twice this month for my subscription, please refund the duplicate charge.",
+    "expected_kb_id": "KB01",
+    "note": "clear match to duplicate charges article"
+  },
+  {
+    "id": "A02",
+    "text": "How do I switch from monthly to annual billing?",
+    "expected_kb_id": "KB05",
+    "note": "clear match to plan switching article"
+  },
+  {
+    "id": "A03",
+    "text": "I never got my password reset email, I've tried twice.",
+    "expected_kb_id": "KB03",
+    "note": "clear match to password reset article"
+  },
+  {
+    "id": "A04",
+    "text": "My consultant showed up late, was dismissive, and gave advice that contradicted safety guidelines. I want to file a complaint.",
+    "expected_kb_id": "KB04",
+    "note": "clear match to expert misconduct article; should also flag_for_review"
+  },
+  {
+    "id": "A05",
+    "text": "My card keeps getting declined when my subscription tries to renew, even though I know it's valid and has funds.",
+    "expected_kb_id": "KB06",
+    "note": "clear match to payment failure article"
+  },
+  {
+    "id": "A06",
+    "text": "The app crashes every time I try to upload a photo on my iPhone, started after I updated to iOS 18.",
+    "expected_kb_id": "KB07",
+    "note": "clear match to known iOS crash bug"
+  },
+  {
+    "id": "A07",
+    "text": "There's a booking on my account I never made, and my payment method was changed to a card I don't recognize.",
+    "expected_kb_id": "KB08",
+    "note": "clear match to account security article; MUST flag_for_review"
+  },
+  {
+    "id": "A08",
+    "text": "I want a refund but it's been 2 months since I subscribed — is that even possible?",
+    "expected_kb_id": "KB02",
+    "note": "clear match to refund policy article"
+  },
+  {
+    "id": "A09",
+    "text": "just wanted to say thanks, the new dashboard is way easier to use now!",
+    "expected_kb_id": null,
+    "note": "EDGE CASE: no real issue, no KB article should match — tests whether the assistant forces a bad match or correctly says no KB needed"
+  },
+  {
+    "id": "A10",
+    "text": "asdf my thing is broken please help fix idk what happened",
+    "expected_kb_id": null,
+    "note": "EDGE CASE: too vague to match any specific KB article — should flag_for_review with low confidence rather than force a guess"
+  }
+]
